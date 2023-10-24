@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="jogo2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/jogo2" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Program Files/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lSOIL" />
+					<Add library="C:/Windows/System32/freeglut.dll" />
+					<Add library="C:/Windows/System32/winmm.dll" />
+					<Add library="C:/Windows/System32/gdi32.dll" />
+					<Add library="C:/Program Files/CodeBlocks/MinGW/lib/glew32.lib" />
+					<Add library="C:/Program Files/CodeBlocks/MinGW/lib/glew32s.lib" />
+					<Add library="C:/Program Files/CodeBlocks/MinGW/lib/libfreeglut.a" />
+					<Add library="C:/Program Files/CodeBlocks/MinGW/lib/libfreeglut_static.a" />
+					<Add library="C:/Program Files/CodeBlocks/MinGW/lib/libSOIL.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/jogo2" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Program Files/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files/CodeBlocks/MinGW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="freeglut" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="C:/Program Files/CodeBlocks/MinGW/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
